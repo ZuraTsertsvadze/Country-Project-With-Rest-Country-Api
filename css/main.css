@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif; }
+
+.body {
+  height: 100vh; }
+
+.main {
+  height: 100vh;
+  background-color: #f9f8f8;
+  padding-top: 50px;
+  padding-left: 60px;
+  padding-right: 60px; }
+  .main .selection-default {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 300; }
+
+.nav {
+  background-color: #FFFF;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  box-shadow: 0px 2px 8px -2px rgba(99, 99, 99, 0.2);
+  position: relative;
+  z-index: 0; }
+  .nav .nav-text {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 800; }
+  .nav .nav-btn {
+    outline: none;
+    background-color: #FFFF;
+    border: none;
+    display: flex;
+    align-items: center; }
+    .nav .nav-btn .dark-text {
+      font-size: 14px;
+      font-weight: 600; }
+    .nav .nav-btn .dark-svg {
+      width: 35px;
+      height: 16px; }
+
+.top-main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px; }
+  .top-main .form {
+    display: inline-flex;
+    background-color: #FFFF;
+    border-radius: 4px;
+    height: 50px;
+    align-items: center;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2); }
+    .top-main .form .search-btn {
+      background-color: #FFFF;
+      border: none;
+      height: 100%;
+      padding: 0px 20px; }
+      .top-main .form .search-btn .search-svg {
+        display: flex;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        fill: #848485; }
+    .top-main .form .input {
+      border: none;
+      outline: none;
+      height: 100%;
+      font-size: 14px;
+      font-weight: 600;
+      width: 100%;
+      padding-right: 30px; }
+  .top-main .filter {
+    background-color: #FFFF;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    border-radius: 4px;
+    box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2); }
+
+.flag {
+  background-color: #FFFF;
+  width: 100%;
+  max-width: 270px;
+  border-radius: 5px; }
+  .flag:hover {
+    transition: all .3s ease-in;
+    transform: scale(1.1);
+    cursor: pointer; }
+  .flag .flag-img {
+    width: 100%;
+    border-radius: 5px;
+    height: 200px; }
+  .flag .other-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 25px 0px 46px 25px; }
+    .flag .other-info .countryName {
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: 800; }
+    .flag .other-info .bold {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 25px;
+      margin-right: 5px; }
+
+.flags-cont {
+  height: 100%; }

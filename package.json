@@ -1,0 +1,14 @@
+{
+  "name": "flag-projects",
+  "version": "1.0.0",
+  "description": "api",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": " node-sass  sass/style.scss   css/main.css  -w"   
+  },
+  "author": "zura",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
