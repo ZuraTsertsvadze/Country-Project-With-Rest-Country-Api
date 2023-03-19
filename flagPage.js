@@ -23,7 +23,7 @@ const borderInfoCont = document.querySelector(".border-info-cont")
 
 
 
-const ara = (searchCountry) => {
+const flagPageMaker = (searchCountry) => {
 
    const countryName = searchCountry
 
@@ -88,7 +88,7 @@ const ara = (searchCountry) => {
 
 
 
-                     ara(borderCountryName)
+                     flagPageMaker(borderCountryName)
 
 
 
@@ -138,4 +138,4 @@ const ara = (searchCountry) => {
 
 
 
-export { ara,main,flagBody };
+export { flagPageMaker,main,flagBody };
