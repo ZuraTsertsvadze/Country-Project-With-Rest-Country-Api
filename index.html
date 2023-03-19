@@ -16,26 +16,15 @@
 <body class="body">
     <nav class="nav">
         <span class="nav-text">Where in the world?</span>
-        <button class="nav-btn">
-            <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
-                xmlns="http://www.w3.org/2000/svg"  class="dark-svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-            </svg>
-            <span class="dark-text">
-                Dark Mode
-            </span>
-
-        </button>
+       
     </nav>
 
     <main class="main">
         <section class="top-main">
             <form class="form">
-                <button class="search-btn"> 
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0"
-                        viewBox="0 0 512 512"  height="1em" width="1em"
-                        xmlns="http://www.w3.org/2000/svg" class="search-svg">
+                <button class="search-btn">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg" class="search-svg">
                         <path
                             d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z">
                         </path>
@@ -55,16 +44,132 @@
                         </path>
                     </svg>
                 </span>
+
+                <ul class="select-cont">
+
+                    <li class="li all">all</li>
+                    <li class="li  Africa">Africa</li>
+                    <li class="li america">Americas</li>
+                    <li class="li Asia">Asia</li>
+                    <li class="li Europe">Europe</li>
+                    <li class="li oceania">Oceania</li>
+
+                </ul>
+
+
+
+
             </span>
 
 
         </section>
 
+        <section class="load-layout">
 
+            <div class="flag-load">
+
+                <div class="load-img   load">
+
+
+                </div>
+
+                <div class="other-info-load ">
+
+                    <div class="load-text  load"></div>
+
+                    <div class="load-text load"></div>
+
+                    <div class="load-text load"> </div>
+
+                    <div class="load-text load"> </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="flag-load">
+
+                <div class="load-img   load">
+
+
+                </div>
+
+                <div class="other-info-load ">
+
+                    <div class="load-text  load"></div>
+
+                    <div class="load-text load"></div>
+
+                    <div class="load-text load"> </div>
+
+                    <div class="load-text load"> </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="flag-load">
+
+                <div class="load-img   load">
+
+
+                </div>
+
+                <div class="other-info-load ">
+
+                    <div class="load-text  load"></div>
+
+                    <div class="load-text load"></div>
+
+                    <div class="load-text load"> </div>
+
+                    <div class="load-text load"> </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="flag-load">
+
+                <div class="load-img   load">
+
+
+                </div>
+
+                <div class="other-info-load ">
+
+                    <div class="load-text  load"></div>
+
+                    <div class="load-text load"></div>
+
+                    <div class="load-text load"> </div>
+
+                    <div class="load-text load"> </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
 
         <section class="flags-cont">
 
-           
+
+
+
+
         </section>
 
 
@@ -72,9 +177,71 @@
     </main>
 
 
+    <section class="flag-body">
+
+        <section class="flag-main">
+
+            <section class="flag-side">
+                <button class="back-cont"> <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                        viewBox="0 0 20 20" class="country__button--icon" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg> Back</button>
+                <img alt="flag" class="country-flag"></img>
 
 
-<script src="script.js"></script>
+
+            </section>
+            <section class="info-country">
+
+                <h1 class="country-flag-title"></h1>
+                <div class="mid-cont">
+
+                    <ul class="left-info">
+                        <li class="country-name-cont"> Native Name: <span class="country-name"> </span></li>
+
+                        <li class="population-country-cont">Population: <span
+                                class="population-country"></span>
+                        </li>
+                        <li class="contry-reg-cont"> Region: <span class="country-reg">Europe</span></li>
+                        <li class="sub-region-cont"> Sub Region: <span class="sub-region">Southern Europe</span></li>
+                        <li class="capital-cont">Capital:<span class="Capital">Tirana</span></li>
+                    </ul>
+
+                    <ul class="right-info">
+                        <li class="domain-cont"> Top Level Domain: <span class="domain"></span></li>
+
+                        <li class="currencies-cont">Currencies:<span class="currencies"> </span>
+                        </li>
+                        <li class="contry-lang-cont">Languages:<span class="country-lang"></span></li>
+
+                    </ul>
+                </div>
+
+                <section class="border-cont">
+
+                    <h1 class="border"> Border Countries:</h1>
+
+                    <ul class="border-info-cont">
+
+                     
+
+                    </ul>
+                </section>
+
+            </section>
+
+
+
+
+        </section>
+
+    </section>
+
+
+    <script type="module" src="script.js  "></script>
 </body>
 
 </html>

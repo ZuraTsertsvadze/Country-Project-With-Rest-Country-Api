@@ -5,7 +5,8 @@
   font-family: 'Nunito Sans', sans-serif; }
 
 .body {
-  height: 100vh; }
+  height: 100vh;
+  background-color: #f9f8f8; }
 
 .main {
   height: 100vh;
@@ -82,21 +83,23 @@
     align-items: center;
     column-gap: 50px;
     border-radius: 4px;
-    box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2); }
+    box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+    position: relative;
+    cursor: pointer; }
 
 .flag {
   background-color: #FFFF;
   width: 100%;
   max-width: 270px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  box-shadow: 1px 0px 25px -4px rgba(100, 100, 111, 0.2); }
   .flag:hover {
     transition: all .3s ease-in;
     transform: scale(1.1);
     cursor: pointer; }
   .flag .flag-img {
     width: 100%;
-    border-radius: 5px;
-    height: 200px; }
+    border-radius: 5px; }
   .flag .other-info {
     display: flex;
     flex-direction: column;
@@ -113,4 +116,214 @@
       margin-right: 5px; }
 
 .flags-cont {
-  height: 100%; }
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 95px;
+  row-gap: 44px;
+  padding-bottom: 50px; }
+
+img {
+  width: 100%;
+  border-radius: 5px;
+  height: 194px; }
+
+.load-img {
+  background-color: #eaeaeb;
+  width: 270px;
+  height: 180px;
+  border-radius: 5px; }
+
+.load {
+  position: relative;
+  overflow: hidden; }
+  .load::after {
+    animation: load .5s linear infinite;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent);
+    transform: translateX(-100%); }
+
+@keyframes load {
+  100% {
+    transform: translateX(100%); } }
+
+.load-text {
+  background-color: #eaeaeb;
+  width: 220px;
+  height: 15px;
+  border-radius: 5px; }
+
+.flag-load {
+  background-color: #FFFF;
+  width: 100%;
+  max-width: 270px;
+  border-radius: 5px;
+  box-shadow: 1px 0px 25px -4px rgba(100, 100, 111, 0.2); }
+  .flag-load .other-info-load {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 25px 0px 46px 25px; }
+
+.none {
+  display: none; }
+
+.select-cont {
+  position: absolute;
+  z-index: 1;
+  top: 53px;
+  left: 0px;
+  background-color: #FFFF;
+  list-style: none;
+  border-radius: 5px;
+  width: 190px;
+  padding: 14px 14px 0px 14px;
+  display: none; }
+  .select-cont .li {
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    cursor: pointer; }
+
+.load-layout {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 95px; }
+
+.flag-main {
+  display: flex;
+  background-color: #f9f8f8;
+  column-gap: 90px;
+  padding: 0px 60px 50px 60px; }
+  .flag-main .flag-side {
+    display: flex;
+    flex-direction: column; }
+    .flag-main .flag-side .country-flag {
+      width: 100%;
+      max-width: 560px;
+      height: 350px; }
+
+.mid-cont {
+  display: flex;
+  column-gap: 90px;
+  margin-bottom: 73px;
+  margin-top: 39px;
+  justify-content: space-between; }
+
+.border-cont {
+  width: 100%;
+  max-width: 500px; }
+  .border-cont h1 {
+    display: inline-block; }
+  .border-cont .border-info-cont {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    column-gap: 5px;
+    margin-bottom: 20px;
+    width: 100%; }
+    .border-cont .border-info-cont .border-country {
+      margin-bottom: 8px;
+      cursor: pointer; }
+  .border-cont li {
+    list-style: none;
+    padding: 5px 25px;
+    border-radius: 5px;
+    box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+    font-size: 12px;
+    font-weight: 300; }
+
+.left-info li {
+  list-style: none;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 600; }
+  .left-info li span {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300; }
+
+.right-info li {
+  list-style: none;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 600; }
+  .right-info li span {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300; }
+
+.info-country {
+  display: flex;
+  flex-direction: column;
+  justify-content: end; }
+
+.country-flag-title {
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 800; }
+
+.border {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  margin-bottom: 5px; }
+
+.back-cont {
+  padding: 5px 22px;
+  border: none;
+  background-color: white;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+  margin-bottom: 68px;
+  margin-top: 50px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  width: 95px;
+  cursor: pointer;
+  column-gap: 7px;
+  font-size: 13px;
+  font-weight: 300; }
+
+.block {
+  display: block; }
+
+@media screen and (max-width: 1050px) {
+  .flag-main {
+    flex-direction: column;
+    align-items: center; }
+  .country-flag {
+    margin-bottom: 30px; }
+  .mid-cont {
+    width: 100%;
+    max-width: 560px; } }
+
+@media screen and (max-width: 470px) {
+  .flag-main {
+    padding-left: 10px;
+    padding-right: 10px; } }
+
+@media screen and (max-width: 805px) {
+  .top-main {
+    flex-direction: column; }
+  .filter {
+    width: 100%;
+    max-width: 191px; }
+  .form {
+    margin-bottom: 10px; } }
+
+@media screen and (max-width: 380px) {
+  .main {
+    padding-left: 5px;
+    padding-right: 5px; }
+  .flags-cont {
+    justify-content: center; }
+  .load-layout {
+    justify-content: center; }
+  .flag-load {
+    margin-bottom: 30px; } }

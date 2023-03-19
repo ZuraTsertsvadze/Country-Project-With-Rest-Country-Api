@@ -1,63 +1,115 @@
-"use strict"
+
+
+import { requestFunction } from "./request.js"
+import { flagBody, main } from "./flagPage.js"
+
 
 const flagsCont = document.querySelector(".flags-cont")
-const searchBtn=document.querySelector( ".search-btn")
+const loadArray = document.querySelectorAll(".flag-load ")
+const all = document.querySelector(".all")
+const america = document.querySelector(".america ")
+const europe = document.querySelector(".Europe")
+const asia = document.querySelector(".Asia")
+const oceania = document.querySelector(".oceania")
+const africa = document.querySelector(".Africa")
+const selectionElement = document.querySelector(".filter")
+const selectionCont = document.querySelector(".select-cont")
+
+const backBut = document.querySelector(".back-cont")
+
+
+flagBody.style.display = "none"
+
+
+const reseter = () => {
+
+    for (const load of loadArray) {
+
+        load.style.display = "block";
+
+    }
+
+    flagBody.style.display = "none"
+
+    flagsCont.innerHTML = "";
+
+}
 
 
 
 
-const request = fetch( "https://restcountries.com/v3.1/name/peru");
 
 
-const responsFulfill=request.then((respons)=>{return respons.json()})
+window.addEventListener("load", () => {
 
 
 
-searchBtn.addEventListener("click",  (e) => {
-    
 
+    requestFunction("https://restcountries.com/v3.1/all");
 
-    e.preventDefault()
+    reseter();
 
-    
+})
 
 
 
 
 
-responsFulfill.then((data)=>{
+africa.addEventListener("click", (e) => {
 
 
-        flagsCont.innerHTML=`
-        
-        <div class="flag">
-        <div class="flag-img">
-        
-        </div>
-        
-        <div class="other-info">
-          <div></div>  
-        
-        </div>
-        
-        
-        </div>
-           `
-
- const flag=document.querySelector(".flag")
-
- const flagImg=document.querySelector(".flag-img")
-
- flagImg.style.backgroundImage=`url("${data[0].flags.png}")`
-
-        console.log(data)
-    
-        return data
-    
-    });
-    
+    reseter();
 
 
+    requestFunction("https://restcountries.com/v3.1/region/africa");
+
+})
+
+
+all.addEventListener("click", (e) => {
+
+
+    reseter();
+
+    requestFunction("https://restcountries.com/v3.1/all");
+
+})
+
+
+
+europe.addEventListener("click", (e) => {
+
+
+    reseter();
+
+    requestFunction("https://restcountries.com/v3.1/region/europe");
+
+
+
+})
+
+asia.addEventListener("click", (e) => {
+
+
+    reseter();
+    requestFunction("https://restcountries.com/v3.1/region/asia");
+
+})
+
+
+oceania.addEventListener("click", (e) => {
+
+    reseter();
+    requestFunction("https://restcountries.com/v3.1/region/oceania");
+
+})
+
+
+america.addEventListener("click", (e) => {
+
+    reseter();
+
+    requestFunction("https://restcountries.com/v3.1/region/americas");
 
 
 
@@ -65,3 +117,21 @@ responsFulfill.then((data)=>{
 })
 
 
+
+selectionElement.addEventListener("click",()=>{
+
+    selectionCont.classList.toggle("block")
+
+})
+
+
+
+backBut.addEventListener("click", () => { flagBody.style.display = "none";
+
+main.style.display = "block" })
+
+
+
+
+
+export { loadArray, flagsCont };
