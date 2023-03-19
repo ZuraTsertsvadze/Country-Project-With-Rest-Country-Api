@@ -1,6 +1,6 @@
 
 
-import { ara, flagBody } from "./flagPage.js";
+import { flagPageMaker, flagBody } from "./flagPage.js";
 import { loadArray, flagsCont } from "./script.js";
 import { search } from "./search.js";
 
@@ -80,7 +80,7 @@ const requestFunction = (typeRequest) => {
         for (const flag of flagArray) {
 
 
-            flag.addEventListener("click", () => { ara(flag.lastElementChild.firstElementChild.textContent) })
+            flag.addEventListener("click", () => { flagPageMaker(flag.lastElementChild.firstElementChild.textContent) })
 
 
         }
